@@ -1,4 +1,4 @@
-package com.example.lab3;
+package com.example.uclab3part1;
 
 import android.os.Bundle;
 import android.widget.TextView;
