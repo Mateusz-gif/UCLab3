@@ -42,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
         notifyButton.setOnClickListener(v -> {
 
+            Intent serviceIntent = new Intent(this, MotionService.class);
+            startService(serviceIntent);
+
             Intent intent = new Intent(this, NotificationActivity.class);
             intent.putExtra("message", "Hello from the notification!");
 
