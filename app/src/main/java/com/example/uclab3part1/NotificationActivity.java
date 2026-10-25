@@ -16,6 +16,10 @@ public class NotificationActivity extends AppCompatActivity {
 
         String text = getIntent().getStringExtra("message");
 
-        message.setText(text);
+        if (text != null) {
+            message.setText(text);
+        } else {
+            message.setText("No motion details available");
+        }
     }
 }
